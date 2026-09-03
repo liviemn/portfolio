@@ -193,13 +193,12 @@ export default function LoginPage({ onLogin }: LoginPageProps) {
   });
   return (
     <main className="flex min-h-screen flex-col items-center px-4 py-8">
-
       {/* floating decorations */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
         {decorations.map((item, index) => (
           <span
             key={index}
-            className="floating-decoration absolute t#B96F8A"
+            className="floating-decoration absolute text-[#B96F8A]"
             style={{
               left: item.left,
               top: item.top,
@@ -226,7 +225,12 @@ export default function LoginPage({ onLogin }: LoginPageProps) {
       {/* login section */}
       <div className="mt-20 flex flex-col items-center gap-6">
         {/* profile picture */}
-        <div className="h-32 w-32 overflow-hidden rounded-full">
+        <div
+          className="h-32 w-32 overflow-hidden rounded-full transition-all duration-500 ease-out
+    hover:scale-110
+    hover:-translate-y-2
+    hover:rotate-3"
+        >
           <img
             src={miffy}
             alt="Profile"
