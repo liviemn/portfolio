@@ -28,17 +28,17 @@ export default function LoginPage({ onLogin }: LoginPageProps) {
     day: "numeric",
   });
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center">
+    <main className="relative flex min-h-screen flex-col items-center justify-center">
       {/* floating decorations */}
       <FloatingDecorations />
 
       {/* time */}
       <div className="text-center">
-        <h1 className="text-5xl lg:text-6xl xl:text-6xl font-normal">
+        <h1 className="text-5xl lg:text-6xl font-normal">
           {formattedTime}
         </h1>
 
-        <p className="mt-2 text-lg lg:text-2xl xl:text-2xl font-medium">
+        <p className="mt-2 text-lg lg:text-2xl font-medium">
           {formattedDate}
         </p>
       </div>
@@ -80,7 +80,7 @@ export default function LoginPage({ onLogin }: LoginPageProps) {
         </button>
 
         {/* bottom system icons */}
-        <div className="mt-auto flex items-center gap-6 pt-18 lg:pt-25 xl:pt-25 2xl:pt-30">
+        <div className="mt-auto flex items-center gap-6 pt-18 lg:pt-25 2xl:pt-30">
           <Wifi size={28} strokeWidth={2.7} />
           <Clock size={28} strokeWidth={2.7} />
           <Power size={28} strokeWidth={2.7} />

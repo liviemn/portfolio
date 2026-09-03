@@ -49,7 +49,7 @@ const decorations = [
     duration: "7.5s",
   },
   {
-    symbol: "⋆",
+    symbol: "୨୧",
     left: "60%",
     top: "20%",
     size: "16px",
@@ -82,7 +82,7 @@ const decorations = [
   },
 
   {
-    symbol: "⋆",
+    symbol: "୨୧",
     left: "10%",
     top: "62%",
     size: "19px",
@@ -114,7 +114,7 @@ const decorations = [
     duration: "8.2s",
   },
   {
-    symbol: "⋆",
+    symbol: "୨୧",
     left: "46%",
     top: "72%",
     size: "15px",
@@ -147,7 +147,7 @@ const decorations = [
     duration: "8s",
   },
   {
-    symbol: "⋆",
+    symbol: "୨୧",
     left: "86%",
     top: "58%",
     size: "17px",
