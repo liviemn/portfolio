@@ -20,7 +20,7 @@ export default function DesktopIcon({
         className="h-25 w-25 object-contain"
       />
 
-      <span className="-mt-4 text-lg text-[#3D2F2B]">
+      <span className="-mt-4 text-lg text-black">
         {label}
       </span>
     </button>

@@ -61,7 +61,7 @@ body {
 }
 
 .floating-decoration {
-  opacity: 0.55;
+  opacity: 0.50;
   animation-name: float;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;

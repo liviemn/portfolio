@@ -44,7 +44,7 @@ export default function LoginPage({ onLogin }: LoginPageProps) {
       </div>
 
       {/* login section */}
-      <div className="mt-20 flex flex-col items-center gap-6">
+      <div className="mt-20 flex flex-col items-center gap-6 z-10">
         {/* profile picture */}
         <div
           className="h-32 w-32 overflow-hidden rounded-full transition-all duration-500 ease-out
