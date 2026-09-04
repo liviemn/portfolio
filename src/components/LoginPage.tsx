@@ -63,7 +63,7 @@ export default function LoginPage({ onLogin }: LoginPageProps) {
         <h2 className="text-2xl font-normal">Olivia Suh</h2>
 
         {/* password */}
-        <div className="flex h-14 w-80 items-center justify-start rounded-full bg-white/70 px-6">
+        <div className="flex h-14 w-80 items-center justify-start rounded-full bg-white px-6">
           <div className="flex gap-3">
             {Array.from({ length: 6 }).map((_, index) => (
               <span key={index}>●</span>
@@ -74,7 +74,7 @@ export default function LoginPage({ onLogin }: LoginPageProps) {
         {/* sign-in button */}
         <button
           onClick={onLogin}
-          className="rounded-full bg-white/70 px-8 py-2 font-medium hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer"
+          className="rounded-full bg-white px-8 py-2 font-medium hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer"
         >
           Sign In
         </button>

@@ -27,8 +27,8 @@ export default function BottomBar() {
     return () => clearInterval(interval);
   }, []);
   return (
-    <div className="flex h-16 w-full items-center justify-between bg-[#B96F8A]/30 px-6">
-      <div className="flex items-center gap-2">
+    <div className="flex h-16 w-full items-center justify-between bg-[#3D2F2B] px-6">
+      <div className="flex items-center gap-2 text-white">
         <TaskbarButton>
           <Cloud size={35} strokeWidth={2} />
         </TaskbarButton>
@@ -38,7 +38,7 @@ export default function BottomBar() {
       </div>
 
 
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-2 text-white">
         <TaskbarButton>
           <ChevronUp size={35} strokeWidth={2} />
         </TaskbarButton>
@@ -48,7 +48,7 @@ export default function BottomBar() {
         <TaskbarButton>
           <Wifi size={35} strokeWidth={2} />
         </TaskbarButton>
-        <span className="text-lg text-[#3D2F2B]">{formattedTime}</span>
+        <span className="text-lg">{formattedTime}</span>
         <TaskbarButton>
           <House size={35} strokeWidth={2} />
         </TaskbarButton>
