@@ -12,7 +12,7 @@ function TaskbarButton({ children }: TaskbarButtonProps) {
 
 export default function BottomBar() {
     return (
-        <div className="absolute bottom-0 left-0 flex h-16 w-full items-center justify-between bg-pink-200/80 px-6">
+        <div className="flex h-16 w-full items-center justify-between bg-[#B96F8A]/30 px-6">
             <div>
                 <TaskbarButton>
                     Left

@@ -1,31 +1,36 @@
 import BottomBar from "./BottomBar";
 import FloatingDecorations from "./FloatingDecorations";
+import HeartIcon from "../assets/hearticon.png";
+import DocIcon from "../assets/docicon.png";
+import LaptopIcon from "../assets/laptopicon.png";
+import LetterIcon from "../assets/lettericon.png";
+import DesktopIcon from "./DesktopIcon";
 
 export default function Desktop() {
   return (
-    <main className="relative overflow-hidden min-h-screen p-8">
-      <FloatingDecorations />
-      <div className="flex flex-col gap-8">
-        <button className="w-24 text-center">
-          <div className="text-5xl">📁</div>
-          <span className="mt-1 block text-sm">About Me</span>
-        </button>
+    <main className="flex flex-col h-screen overflow-hidden">
 
-        <button className="w-24 text-center">
-          <div className="text-5xl">💻</div>
-          <span className="mt-1 block text-sm">Projects</span>
-        </button>
+      <div className="relative flex-1 overflow-y-auto">
+        <div className="relative min-h-screen">
+            <FloatingDecorations />
+          {/* desktop icons */}
+          <div className="absolute left-6 top-5 flex flex-col gap-6">
+            <DesktopIcon icon={HeartIcon} label="about me" />
 
-        <button className="w-24 text-center">
-          <div className="text-5xl">📄</div>
-          <span className="mt-1 block text-sm">Resume</span>
-        </button>
+            <DesktopIcon icon={DocIcon} label="resume" />
 
-        <button className="w-24 text-center">
-          <div className="text-5xl">💌</div>
-          <span className="mt-1 block text-sm">Contact</span>
-        </button>
+            <DesktopIcon icon={LaptopIcon} label="projects" />
+
+            <DesktopIcon icon={LetterIcon} label="contact" />
+          </div>
+
+          <div className="absolute right-8 top-8">
+            {/* widgets here */}
+          </div>
+        </div>
       </div>
+
+      {/* bottom bar */}
       <BottomBar />
     </main>
   );
