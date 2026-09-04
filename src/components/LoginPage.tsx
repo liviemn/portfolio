@@ -74,7 +74,7 @@ export default function LoginPage({ onLogin }: LoginPageProps) {
         {/* sign-in button */}
         <button
           onClick={onLogin}
-          className="rounded-full bg-white/70 px-8 py-2 text-stone-600 font-medium hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer"
+          className="rounded-full bg-white/70 px-8 py-2 font-medium hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer"
         >
           Sign In
         </button>

@@ -170,7 +170,7 @@ export default function FloatingDecorations() {
         {decorations.map((item, index) => (
           <span
             key={index}
-            className="floating-decoration absolute text-[#B96F8A]"
+            className="floating-decoration absolute text-[#3D2F2B]"
             style={{
               left: item.left,
               top: item.top,

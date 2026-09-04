@@ -5,7 +5,6 @@ import DocIcon from "../assets/docicon.png";
 import LaptopIcon from "../assets/laptopicon.png";
 import LetterIcon from "../assets/lettericon.png";
 import DesktopIcon from "./DesktopIcon";
-import CalendarWidget from "./widgets/CalendarWidget";
 
 export default function Desktop() {
   return (
@@ -25,9 +24,10 @@ export default function Desktop() {
           </div>
 
           <div className="absolute right-8 top-8 flex flex-col items-end gap-5">
-            <div className="absolute right-8 top-8">
-              <CalendarWidget />
-            </div>
+            {/* widget */}
+          </div>
+          <div className="absolute right-80 top-80 flex flex-col items-end gap-5">
+            {/* widget */}
           </div>
         </div>
       </div>

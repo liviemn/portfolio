@@ -28,44 +28,23 @@ body {
   min-height: 100vh;
 
   background:
-    /* soft pink upper-left */
-    radial-gradient(
-      circle at 10% 5%,
-      rgba(255, 221, 239, 0.75) 0%,
-      rgba(255, 221, 239, 0.35) 25%,
-      transparent 48%
-    ),
 
-    /* light lavender upper-right */
-    radial-gradient(
-      circle at 90% 10%,
-      rgba(226, 217, 255, 0.85) 0%,
-      rgba(226, 217, 255, 0.4) 30%,
-      transparent 55%
-    ),
-
-    /* lavender center/bottom */
-    radial-gradient(
-      circle at 55% 85%,
-      rgba(214, 205, 250, 0.8) 0%,
-      rgba(214, 205, 250, 0.4) 30%,
-      transparent 60%
-    ),
-
-    /* very light pink on left side */
-    radial-gradient(
-      circle at 5% 65%,
-      rgba(255, 228, 243, 0.65) 0%,
-      transparent 45%
-    ),
-
-    /* base color */
+    /* checker pattern */
     linear-gradient(
-      135deg,
-      #fff7fb 0%,
-      #f7efff 45%,
-      #eee8ff 100%
-    );
+      90deg,
+      rgba(183, 177, 190, 0.25) 50%,
+      transparent 50%
+    )
+    0 0 / 100px 100px,
+
+    linear-gradient(
+      rgba(183, 177, 190, 0.25) 50%,
+      transparent 50%
+    )
+    0 0 / 100px 100px,
+
+    /* base */
+    #faf8f7;
 
   background-attachment: fixed;
 }
