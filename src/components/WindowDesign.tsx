@@ -135,9 +135,6 @@ export default function WindowDesign({
             </button>
           </div>
 
-          {/* Cute divider */}
-          <div className="relative z-10 mx-8 border-t border-dashed border-[#CEC7C2]" />
-
           {/* Scrollable content */}
           <div
             className="
