@@ -109,7 +109,7 @@ export default function WindowDesign({
             "
           >
             <div>
-              <h2 className="text-2xl lowercase tracking-wide sm:text-3xl">
+              <h2 className="font-satisfy text-4xl lowercase">
                 {title}
               </h2>
             </div>

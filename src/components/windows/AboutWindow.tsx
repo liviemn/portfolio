@@ -13,7 +13,7 @@ export default function AboutWindow({
     <WindowDesign
       isOpen={isOpen}
       onClose={onClose}
-      title="get to know me"
+      title="about me"
     >
       <div className="space-y-5">
         <p className="leading-7">

@@ -21,6 +21,17 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Satisfy";
+  src: url("./assets/fonts/Satisfy-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@theme {
+  --font-satisfy: "Satisfy", cursive;
+}
+
 body {
   font-family: "Apple Garamond", serif;
   color: #3D2F2B;
