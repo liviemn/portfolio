@@ -13,13 +13,16 @@ export default function ResumeWindow({
     <WindowDesign
       isOpen={isOpen}
       onClose={onClose}
-      title="resume"
     >
       <div className="space-y-4">
-        <p>Click to download my resume ♡</p>
+        <p>Click to look at my resume</p>
 
-        <button
+        <a
+          href="/swe_resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
           className="
+            inline-block
             border border-[#CDBA9C]
             bg-[#F7EAD8]
             px-4 py-2
@@ -29,8 +32,8 @@ export default function ResumeWindow({
             hover:bg-[#F2DECA]
           "
         >
-          resume
-        </button>
+          view resume ↗
+        </a>
       </div>
     </WindowDesign>
   );

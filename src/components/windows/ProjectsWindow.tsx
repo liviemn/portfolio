@@ -13,7 +13,6 @@ export default function ProjectsWindow({
     <WindowDesign
       isOpen={isOpen}
       onClose={onClose}
-      title="projects"
     >
       <div className="space-y-6">
         <div>

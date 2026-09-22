@@ -3,14 +3,12 @@ import { useEffect } from "react";
 type WindowDesignProps = {
   isOpen: boolean;
   onClose: () => void;
-  title: string;
   children: React.ReactNode;
 };
 
 export default function WindowDesign({
   isOpen,
   onClose,
-  title,
   children,
 }: WindowDesignProps) {
   useEffect(() => {
@@ -96,24 +94,7 @@ export default function WindowDesign({
           />
 
           {/* Header */}
-          <div
-            className="
-              relative z-10
-              flex
-              shrink-0
-              items-center
-              justify-between
-              px-8
-              pb-4
-              pt-7
-            "
-          >
-            <div>
-              <h2 className="font-satisfy text-4xl lowercase">
-                {title}
-              </h2>
-            </div>
-
+          <div className="relative z-20 flex shrink-0 justify-end px-3 py-1">
             <button
               onClick={onClose}
               aria-label="Close window"
@@ -133,7 +114,7 @@ export default function WindowDesign({
             >
               ×
             </button>
-          </div>
+            </div>
 
           {/* Scrollable content */}
           <div
@@ -143,7 +124,6 @@ export default function WindowDesign({
               flex-1
               overflow-y-auto
               px-8
-              py-7
               sm:px-10
             "
           >
