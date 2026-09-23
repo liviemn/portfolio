@@ -43,13 +43,13 @@ body {
     /* checker pattern */
     linear-gradient(
       90deg,
-      rgba(183, 177, 190, 0.25) 50%,
+      rgba(155, 154, 168, 0.25) 50%,
       transparent 50%
     )
     0 0 / 100px 100px,
 
     linear-gradient(
-      rgba(183, 177, 190, 0.25) 50%,
+      rgba(155, 154, 168, 0.25) 50%,
       transparent 50%
     )
     0 0 / 100px 100px,
