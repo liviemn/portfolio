@@ -62,7 +62,6 @@ export default function WindowDesign({
           "
         />
 
-
         {/* Main paper */}
         <div
           className="
@@ -94,27 +93,25 @@ export default function WindowDesign({
           />
 
           {/* Header */}
-          <div className="relative z-20 flex shrink-0 justify-end px-3 py-1">
-            <button
-              onClick={onClose}
-              aria-label="Close window"
-              className="
-                flex h-8 w-8
-                cursor-pointer
-                items-center justify-center
-                rounded-full
-                border border-[#AAA19C]
-                bg-[#EEEAE6]
-                text-[#3D2F2B]
-                transition
-                duration-200
-                hover:scale-110
-                hover:bg-[#E2DDDA]
-              "
-            >
-              ×
-            </button>
-            </div>
+          <button
+            type="button"
+            onClick={onClose}
+            aria-label="Close window"
+            className="
+    absolute right-5 top-5 z-20
+    flex h-8 w-8
+    cursor-pointer items-center justify-center
+    rounded-full
+    border border-[#AAA19C]
+    bg-[#EEEAE6]
+    text-[#3D2F2B]
+    transition duration-200
+    hover:scale-110
+    hover:bg-[#E2DDDA]
+  "
+          >
+            ×
+          </button>
 
           {/* Scrollable content */}
           <div
@@ -124,6 +121,7 @@ export default function WindowDesign({
               flex-1
               overflow-y-auto
               px-8
+              pt-8
               sm:px-10
             "
           >
@@ -143,8 +141,7 @@ export default function WindowDesign({
               text-xs
               text-[#9A918D]
             "
-          >
-          </div>
+          ></div>
         </div>
       </div>
     </div>

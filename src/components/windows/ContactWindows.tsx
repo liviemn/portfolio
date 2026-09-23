@@ -66,7 +66,7 @@ export default function ContactWindow({
           </p>
 
           <h2 className="font-serif text-4xl tracking-tight sm:text-5xl">
-            CONTACT ME
+            get in touch
           </h2>
 
           {/* Hand-drawn underline */}
