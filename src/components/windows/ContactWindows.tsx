@@ -1,22 +1,20 @@
 import { useState } from "react";
-import type { FormEvent } from "react";
+import type { SubmitEvent } from "react";
 import emailjs from "@emailjs/browser";
 import WindowDesign from "../WindowDesign";
+import { FaGithub, FaLinkedin, FaSpotify } from "react-icons/fa";
 
 type ContactWindowProps = {
   isOpen: boolean;
   onClose: () => void;
 };
 
-export default function ContactWindow({
-  isOpen,
-  onClose,
-}: ContactWindowProps) {
+export default function ContactWindow({ isOpen, onClose }: ContactWindowProps) {
   const [status, setStatus] = useState<
     "idle" | "sending" | "success" | "error"
   >("idle");
 
-  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(event: SubmitEvent<HTMLFormElement>) {
     event.preventDefault();
 
     if (status === "sending") return;
@@ -37,7 +35,7 @@ export default function ContactWindow({
         },
         {
           publicKey: "vA2iO6NLKY4dR4iP9",
-        }
+        },
       );
 
       setStatus("success");
@@ -47,17 +45,14 @@ export default function ContactWindow({
     }
   }
 
-    const inputStyle =
+  const inputStyle =
     "w-full min-w-0 border-0 bg-transparent px-2 py-3 " +
     "font-mono text-sm text-[#494336] " +
     "placeholder:text-[#948C7C] outline-none " +
     "focus:bg-[#E6E2D3]/50 rounded-sm transition-colors";
 
   return (
-    <WindowDesign
-      isOpen={isOpen}
-      onClose={onClose}
-    >
+    <WindowDesign isOpen={isOpen} onClose={onClose}>
       <div className="relative isolate px-1 py-3 text-[#494336] sm:px-4">
         {/* Scrapbook heading */}
         <div className="mb-7">
@@ -84,11 +79,37 @@ export default function ContactWindow({
             />
           </svg>
 
-          <p className="mt-3 font-mono text-xs leading-relaxed">
-            linkedin github spotify
-            <br />
-            leave a little something below.
-          </p>
+          <div className="mt-3 flex items-center gap-5">
+            <a
+              href="https://www.linkedin.com/in/liviemoon/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn profile"
+              className="transition-colors hover:text-[#0A66C2]"
+            >
+              <FaLinkedin size={24} />
+            </a>
+
+            <a
+              href="https://github.com/liviemn"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub profile"
+              className="transition-colors hover:text-gray-500"
+            >
+              <FaGithub size={24} />
+            </a>
+
+            <a
+              href="https://open.spotify.com/user/liviemn"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Spotify profile"
+              className="transition-colors hover:text-[#1DB954]"
+            >
+              <FaSpotify size={24} />
+            </a>
+          </div>
         </div>
 
         {/* Stationery paper */}
@@ -146,9 +167,7 @@ export default function ContactWindow({
                            border-b border-[#D5CEBF]
                            py-3 font-mono text-sm"
               >
-                <span className="w-16 shrink-0 text-[#817967]">
-                  to:
-                </span>
+                <span className="w-16 shrink-0 text-[#817967]">to:</span>
                 <span className="px-2">olivia</span>
               </div>
 
