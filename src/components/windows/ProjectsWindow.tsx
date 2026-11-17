@@ -1,5 +1,9 @@
 import WindowDesign from "../WindowDesign";
 import { FaGithub } from "react-icons/fa";
+import SpotifyWrapped from "../../assets/spotifywrapped.png";
+import MusicBot from "../../assets/musicbot.png";
+import SQLGui from "../../assets/sqlgui.png";
+import Portfolio from "../../assets/portfolio.png";
 
 type ProjectsWindowProps = {
   isOpen: boolean;
@@ -10,28 +14,28 @@ const projects = [
   {
     title: "Mini Spotify Wrapped",
     description: "A little snapshot of your listening habits.",
-    image: "/src/assets/spotifywrapped.png",
+    image: SpotifyWrapped,
     languages: ["React", "Java", "SpringBoot", "Spotify API", "OAuth2"],
     githubUrl: "https://github.com/liviemn/mini-spotify-wrapped",
   },
   {
     title: "Discord Music Bot",
     description: "A music companion for your Discord server.",
-    image: "/src/assets/musicbot.png",
+    image: MusicBot,
     languages: ["JavaScript", "Discord.js", "Discord API"],
     githubUrl: "https://github.com/liviemn/discord-music-bot",
   },
   {
     title: "SQLgui",
     description: "Interactive visual SQL schema builder.",
-    image: "/src/assets/sqlgui.png",
+    image: SQLGui,
     languages: ["React", "Flask", "Docker", "HTML", "CSS", "JavaScript"],
     githubUrl: "",
   },
   {
     title: "Portfolio",
     description: "My interactive desktop-style portfolio.",
-    image: "/src/assets/portfolio.png",
+    image: Portfolio,
     languages: ["React", "TypeScript", "HTML", "CSS", "TailwindCSS"],
     githubUrl: "https://github.com/liviemn/portfolio",
   },
