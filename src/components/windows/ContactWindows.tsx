@@ -242,11 +242,8 @@ export default function ContactWindow({ isOpen, onClose }: ContactWindowProps) {
 
               <div
                 className="mt-5 flex flex-wrap items-center
-                           justify-between gap-3"
+                           justify-end gap-3"
               >
-                <span className="font-serif text-sm italic text-[#817967]">
-                  sent with a little love ♡
-                </span>
 
                 <button
                   type="submit"

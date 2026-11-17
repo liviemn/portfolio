@@ -13,35 +13,50 @@ export default function ResumeWindow({
     <WindowDesign isOpen={isOpen} onClose={onClose}>
       <div className="space-y-8 pb-6 text-[#494336]">
         {/* Heading */}
-        <div>
-          <h2 className="pr-12 font-serif text-4xl tracking-tight sm:text-5xl">
-            resume
-          </h2>
+<div>
+  <div className="flex items-center justify-center gap-3 sm:gap-5">
+    {/* Left doodle */}
+    <svg
+      viewBox="0 0 36 50"
+      fill="none"
+      aria-hidden="true"
+      className="h-10 w-7 shrink-0 text-[#3D2B1F]"
+    >
+      <path
+        d="M13 7 L25 16 M5 25 L22 28 M10 44 L24 38"
+        stroke="currentColor"
+        strokeWidth="3"
+        strokeLinecap="round"
+      />
+    </svg>
 
-          {/* Hand-drawn underline */}
-          <svg
-            viewBox="0 0 400 18"
-            fill="none"
-            aria-hidden="true"
-            className="mt-2 h-5 w-full max-w-sm text-[#797A60]"
-          >
-            <path
-              d="M3 10 Q160 0 395 9 M15 15 Q150 7 285 13"
-              stroke="currentColor"
-              strokeWidth="1.3"
-              strokeLinecap="round"
-            />
-          </svg>
+    <h2
+      className="font-satisfy -rotate-2 text-4xl leading-none
+                 tracking-tight text-[#3D2B1F] sm:text-6xl"
+    >
+      resume
+    </h2>
 
-          <div
-            className="mt-4 flex flex-col gap-4
-                       sm:flex-row sm:items-center sm:justify-between"
-          >
-            <p className="max-w-xs font-mono text-sm leading-relaxed">
-              My experience, education, and technical skills.
-            </p>
-          </div>
-        </div>
+    {/* Right doodle */}
+    <svg
+      viewBox="0 0 36 50"
+      fill="none"
+      aria-hidden="true"
+      className="h-10 w-7 shrink-0 text-[#3D2B1F]"
+    >
+      <path
+        d="M11 16 L23 7 M14 28 L31 25 M12 38 L26 44"
+        stroke="currentColor"
+        strokeWidth="3"
+        strokeLinecap="round"
+      />
+    </svg>
+  </div>
+
+  <p className="mx-auto mt-4 max-w-xs text-center font-mono text-sm leading-relaxed">
+    My experience, education, and technical skills.
+  </p>
+</div>
 
         {/* Paper preview */}
         <div className="relative mx-auto w-full max-w-lg pt-3">

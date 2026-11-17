@@ -20,10 +20,7 @@ export default function AboutWindow({
         </p>
 
         <p className="text-sm leading-6 text-[#6F5C50]">
-          My name is Olivia Suh. I am a Computer Science major at George Mason University. 
-          I love: matcha, vanilla latte from pete's coffee, gaming, miffy, shopping, notetaking, skiing, traveling, skincare, MBTI
-          Favorite music genre: kballad/sentemental music
-          Games: Valorant, TFT, Animal Crossing, Minecraft
+          TBD
         </p>
       </div>
     </WindowDesign>

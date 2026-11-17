@@ -45,6 +45,7 @@ export default function WindowDesign({
           relative
           w-full
           max-w-[700px]
+          lg:max-w-[850px]
           animate-[windowOpen_250ms_ease-out]
         "
         onClick={(event) => event.stopPropagation()}
