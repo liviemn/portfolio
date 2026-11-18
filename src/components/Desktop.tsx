@@ -28,7 +28,7 @@ export default function Desktop() {
         <div className="relative min-h-screen">
           <FloatingDecorations />
           {/* desktop icons */}
-          <div className="absolute left-6 top-5 flex flex-col gap-6">
+          <div className="absolute left-6 top-5 flex flex-col gap-5">
             <DesktopIcon icon={HeartIcon} label="about me" onClick={() => setActiveWindow("about")}/>
 
             <DesktopIcon icon={DocIcon} label="resume" onClick={() => setActiveWindow("resume")}/>

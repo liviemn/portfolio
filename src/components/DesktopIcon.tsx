@@ -17,10 +17,10 @@ export default function DesktopIcon({
       <img
         src={icon}
         alt={label}
-        className="h-25 w-25 object-contain"
+        className="h-30 w-30 object-contain"
       />
 
-      <span className="-mt-4 text-lg text-black">
+      <span className="-mt-6 text-lg text-black">
         {label}
       </span>
     </button>

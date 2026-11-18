@@ -10,7 +10,6 @@ export default function App() {
   useEffect(() => {
     if(screen != "loading") return;
 
-    setProgress(0);
     const interval = setInterval(() => {
       setProgress((prev) => {
         if (prev >= 100) {
@@ -38,7 +37,10 @@ export default function App() {
   if (screen === "login") {
     return (
       <LoginPage
-        onLogin={() => setScreen("loading")}
+        onLogin={() => {
+          setProgress(0);
+          setScreen("loading")
+        }}
       />
     );
   }
