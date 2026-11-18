@@ -10,6 +10,7 @@ import AboutWindow from "./windows/AboutWindow";
 import ProjectsWindow from "./windows/ProjectsWindow";
 import ResumeWindow from "./windows/ResumeWindow";
 import ContactWindow from "./windows/ContactWindows";
+import CalendarWidget from "./widgets/CalendarWidget";
 
 type WindowType =
   | "about"
@@ -38,8 +39,8 @@ export default function Desktop() {
             <DesktopIcon icon={LetterIcon} label="contact" onClick={() => setActiveWindow("contact")}/>
           </div>
 
-          <div className="absolute right-8 top-8 flex flex-col items-end gap-5">
-            {/* widget */}
+          <div className="absolute right-8 top-8 hidden md:block">
+            <CalendarWidget/>
           </div>
           <div className="absolute right-80 top-80 flex flex-col items-end gap-5">
             {/* widget */}
