@@ -11,6 +11,8 @@ import ProjectsWindow from "./windows/ProjectsWindow";
 import ResumeWindow from "./windows/ResumeWindow";
 import ContactWindow from "./windows/ContactWindows";
 import CalendarWidget from "./widgets/CalendarWidget";
+import PhotoWidget from "./widgets/PhotoWidget";
+import HeadphoneMiffy from "../assets/headphonemiffy.webp"
 
 type WindowType =
   | "about"
@@ -39,8 +41,9 @@ export default function Desktop() {
             <DesktopIcon icon={LetterIcon} label="contact" onClick={() => setActiveWindow("contact")}/>
           </div>
 
-          <div className="absolute right-8 top-8 hidden md:block">
+          <div className="absolute right-8 top-8 hidden flex-col items-end gap-4 md:flex">
             <CalendarWidget/>
+            <PhotoWidget src={HeadphoneMiffy} alt="decorative"/>
           </div>
           <div className="absolute right-80 top-80 flex flex-col items-end gap-5">
             {/* widget */}

@@ -32,7 +32,7 @@ export default function CalendarWidget() {
       aria-label={`Calendar for ${today.toLocaleDateString("en-US", {
         dateStyle: "full",
       })}`}
-      className="flex w-[300px] max-w-full items-center gap-4 rounded-[24px]
+      className="flex w-[350px] max-w-full items-center gap-4 rounded-[24px]
                  border border-white/40 bg-[#aaa7ab] px-4 py-3 text-white
                  shadow-sm"
     >
