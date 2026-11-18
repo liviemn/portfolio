@@ -1,10 +1,10 @@
 import { useState } from "react";
 import BottomBar from "./BottomBar";
 import FloatingDecorations from "./FloatingDecorations";
-import HeartIcon from "../assets/hearticon.png";
-import DocIcon from "../assets/docicon.png";
-import LaptopIcon from "../assets/laptopicon.png";
-import LetterIcon from "../assets/lettericon.png";
+import HeartIcon from "../assets/hearticon.webp";
+import DocIcon from "../assets/docicon.webp";
+import LaptopIcon from "../assets/laptopicon.webp";
+import LetterIcon from "../assets/lettericon.webp";
 import DesktopIcon from "./DesktopIcon";
 import AboutWindow from "./windows/AboutWindow";
 import ProjectsWindow from "./windows/ProjectsWindow";

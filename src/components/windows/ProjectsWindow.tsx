@@ -1,9 +1,9 @@
 import WindowDesign from "../WindowDesign";
 import { FaGithub } from "react-icons/fa";
-import SpotifyWrapped from "../../assets/spotifywrapped.png";
-import MusicBot from "../../assets/musicbot.png";
-import SQLGui from "../../assets/sqlgui.png";
-import Portfolio from "../../assets/portfolio.png";
+import SpotifyWrapped from "../../assets/spotifywrapped.webp";
+import MusicBot from "../../assets/musicbot.webp";
+import SQLGui from "../../assets/sqlgui.webp";
+import Portfolio from "../../assets/portfolio.webp";
 
 type ProjectsWindowProps = {
   isOpen: boolean;
