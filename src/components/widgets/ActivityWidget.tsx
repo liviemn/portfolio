@@ -1,5 +1,5 @@
 import { useLanyard } from "use-lanyard";
-import gif from "../../assets/water.gif";
+import musicphoto from "../../assets/no-music.webp";
 
 const DISCORD_ID = "348153501148381184";
 
@@ -106,7 +106,7 @@ export default function ActivityWidget() {
 
             {presence && !song && (
               <img
-                src={gif}
+                src={musicphoto}
                 alt="Currently not listening to music"
                 className="absolute inset-0 size-full bg-[#eddddf] object-cover"
               />
