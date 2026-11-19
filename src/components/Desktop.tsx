@@ -13,6 +13,7 @@ import ContactWindow from "./windows/ContactWindows";
 import CalendarWidget from "./widgets/CalendarWidget";
 import PhotoWidget from "./widgets/PhotoWidget";
 import HeadphoneMiffy from "../assets/headphonemiffy.webp"
+import ActivityWidget from "./widgets/ActivityWidget";
 
 type WindowType =
   | "about"
@@ -43,7 +44,12 @@ export default function Desktop() {
 
           <div className="absolute right-8 top-8 hidden flex-col items-end gap-4 md:flex">
             <CalendarWidget/>
-            <PhotoWidget src={HeadphoneMiffy} alt="decorative"/>
+            <div className="-translate-x-47">
+              <PhotoWidget src={HeadphoneMiffy} alt="decorative"/>           
+            </div>
+            <div className="flex -translate-x-5 flex-col gap-4">
+              <ActivityWidget/>
+            </div>
           </div>
           <div className="absolute right-80 top-80 flex flex-col items-end gap-5">
             {/* widget */}
