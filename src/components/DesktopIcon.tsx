@@ -12,7 +12,7 @@ export default function DesktopIcon({
   return (
     <button
       onClick={onClick}
-      className="flex w-28 cursor-pointer flex-col items-center"
+      className="flex w-30 cursor-pointer flex-col items-center"
     >
       <img
         src={icon}
