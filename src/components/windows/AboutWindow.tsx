@@ -1,8 +1,8 @@
 import type { ReactNode } from "react";
 import WindowDesign from "../WindowDesign";
 import { useState } from "react";
-import Me from "../../assets/me.png";
-import Bori from "../../assets/bori.png";
+import Me from "../../assets/me.webp";
+import Bori from "../../assets/bori.webp";
 import { Typewriter } from "react-simple-typewriter";
 
 type AboutWindowProps = {
